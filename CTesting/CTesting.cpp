@@ -5,23 +5,23 @@
 
 int main()
 {
-    // For loops run the (i < num - 1) times
-    // Instead use (i <= num)
-    while (true) {
-        for (int i = 1; i <= 10000; i++) {
-            log(format(i));
-            if (IsEven(i) == true) {
-                log("Even");
-            }
-            else {
-                log("Odd");
-            }
-        }
-        string Again = input("Anything else?: ");
-        if (Again == "no") {
-            break;
-        }
-    }
+	// For loops run the (i < num - 1) times
+	// Instead use (i <= num)
+	for (int i = 1; i <= 10000; i++) {
+		log(format(i));
+		if (IsEven(i) == true) {
+			log("Even");
+		}
+		else {
+			log("Odd");
+		}
+	}
+	/*
+	string Again = input("Anything else?: ");
+	if (Again == "no") {
+		break;
+	}
+	*/
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
